@@ -1,6 +1,6 @@
-dishitem=[{"ID":1,"Name":"samosa","Quantity":10,"Price":20},{"ID":2,"Name":"momo","Quantity":5,"Price":10},
-      {"ID":3,"Name":"pizza","Quantity":8,"Price":100}]
-
+dishitem=[{"ID":1,"Name":"momose","Quantity":12,"Price":230},{"ID":2,"Name":"pizza","Quantity":2,"Price":550},
+      {"ID":3,"Name":"dosa","Quantity":3,"Price":400}, {"ID":4,"Name":"idli","Quantity":443,"Price":400}]
+      
 orderItem=[]
 def Add_dishitem():
     name=(input("Enter Dish Name: "))
@@ -98,7 +98,6 @@ def New_Order():
 
 
 
-
 def Update_order_status():
      Id=int(input("Enter Dish ID: "))
      
@@ -118,6 +117,7 @@ def Update_order_status():
 def Review_Order_status():
     print(orderItem)
 
+
 while True:
     print("Welcome to Zesty Zomato")
     print("==============================================")
@@ -128,7 +128,7 @@ while True:
     print("4. Update Availablity") 
     print("5. New Order") 
     print("6. Update order Status")
-    print("7, Review all orders")
+    print("7. Review all orders")
     print("8. Exit")
 
     choice = int(input("choose you input: "))
