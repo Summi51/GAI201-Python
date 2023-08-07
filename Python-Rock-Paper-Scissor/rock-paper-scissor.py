@@ -18,7 +18,7 @@ def winner(your_choice, computer_choice):
         print("You win!")
     else:
         computer_wins += 1
-        print("Computer wins!")
+        print("Computer win!")
 
 def game_play():
     choices = ['rock', 'paper', 'scissors']
@@ -30,7 +30,6 @@ def game_play():
     print("4. Quit")
 
     player_choice = int(input("Enter your choice (1-4): ")) - 1
-
     if player_choice == 3:
         print("You have quit the game.")
         return False
