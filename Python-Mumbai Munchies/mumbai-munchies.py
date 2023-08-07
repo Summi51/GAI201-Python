@@ -30,7 +30,7 @@ def Remove_menuitem():
 
     for i in listinput:
         if i["ID"] == Id:
-            listinput.remove(i)3
+            listinput.remove(i)
             print("Item removed Successfully!!")
             print("==============================================")
             return
