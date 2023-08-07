@@ -14,11 +14,14 @@ def Add_menuitem():
     for i in listinput:
         if i["ID"] == Id:
             print("Id is already exists here!!")
+            print("==============================================")
             return
     
 
     listinput.append(dictobj)
     print("Item added Successfully!!")
+    print("==============================================")
+
 
 
 
@@ -27,12 +30,15 @@ def Remove_menuitem():
 
     for i in listinput:
         if i["ID"] == Id:
-            listinput.remove(i)
+            listinput.remove(i)3
             print("Item removed Successfully!!")
+            print("==============================================")
             return
 
     
     print("Item not found here!! ")
+    print("==============================================")
+
     return
 
 
@@ -44,27 +50,35 @@ def Update_menuitem():
         if i["ID"] == Id:
             i["Price"] = New_price
             print("Item Updated Successfully!!")
+            print("==============================================")
             return
 
     
     print("Item not found here!! ")
+    print("==============================================")
+
     return
 
 
 
 def Record_sale():
     print(listinput)
+    print("==============================================")
+
 
 
 
 while True :
     print("Welcome to Mumbai Munchies shop!")
+    print("==============================================")
     print("Please choose one of the following options:")
     print("1. Add Snack")
     print("2. Remove Snack")
     print("3. Update Snack Availability")
     print("4. Record Sale")
     print("5. Exit")
+    print("==============================================")
+
 
 
     choise = int(input("choose you input: "))
@@ -83,7 +97,9 @@ while True :
 
     elif choise == 5:
         print("You have quit!! ")
+        print("==============================================")
         break;
     else:
         print("Invalid input please try again")
-        continue
+        print("==============================================")
+        continue;
